@@ -8,10 +8,10 @@ sudo python ./arppoisoner.py victims.txt servers.txt MTM timeBetweenPackages
 and for the MTM type the following command line:
 sudo nano /proc/sys/net/ipv4/ip_forward where you have to substitute the 0 with a 1, press ctrl-x and y + enter to save
 
-victims.txt and server.txt contain the IP addresses each on a new line, for example:
-1.1.1.1
-1.1.1.2
-1.1.1.3
+victims.txt and server.txt contain the IP addresses each on a new line, for example:  
+1.1.1.1  
+1.1.1.2  
+1.1.1.3  
 
 MTM is the IP address of the system that should become the man-in-the-middle
 
@@ -36,10 +36,10 @@ victims.txt contains the IP addresses each on a new line, for example:
 
 victimDnsServerIp is the IP of the DNS server you are pretending to be
 
-sitesToBeSpoofed.txt contains the sites and the IP addresses you want the victims to be directed to seperated by a space, for example:
-google.com 1.1.1.1
-www.google.com 1.1.1.1
-buienradar.nl 1.1.1.2
+sitesToBeSpoofed.txt contains the sites and the IP addresses you want the victims to be directed to seperated by a space, for example:  
+google.com 1.1.1.1  
+www.google.com 1.1.1.1  
+buienradar.nl 1.1.1.2  
 
 myIp myMAC are the IP and the MAC of the system the tool is used upon
 

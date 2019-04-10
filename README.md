@@ -3,9 +3,9 @@ This is the code for the lab project of course 2IC80 for group 34 Nameless
 
 Both the arppoisoner and dnspoisoner are only for use on linux
 
-To use the arppoisoner type the following on the command line:
-sudo python ./arppoisoner.py victims.txt servers.txt MTM timeBetweenPackages
-and for the MTM type the following command line:
+To use the arppoisoner type the following on the command line:  
+sudo python ./arppoisoner.py victims.txt servers.txt MTM timeBetweenPackages  
+and for the MTM type the following command line:  
 sudo nano /proc/sys/net/ipv4/ip_forward where you have to substitute the 0 with a 1, press ctrl-x and y + enter to save
 
 victims.txt and server.txt contain the IP addresses each on a new line, for example:  
@@ -24,15 +24,15 @@ victim and server will go via the MTM.
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-To use the arppoisoner type the following on the command line:
-sudo python ./dnspoisoner.py victims.txt victimDnsServerIp sitesToBeSpoofed.txt myIp myMAC
-and:
+To use the arppoisoner type the following on the command line:  
+sudo python ./dnspoisoner.py victims.txt victimDnsServerIp sitesToBeSpoofed.txt myIp myMAC  
+and:  
 sudo nano /proc/sys/net/ipv4/ip_forward where you have to substitute the 0 with a 1, press ctrl-x and y + enter to save
 
-victims.txt contains the IP addresses each on a new line, for example:
-1.1.1.1
-1.1.1.2
-1.1.1.3
+victims.txt contains the IP addresses each on a new line, for example:  
+1.1.1.1  
+1.1.1.2  
+1.1.1.3  
 
 victimDnsServerIp is the IP of the DNS server you are pretending to be
 
